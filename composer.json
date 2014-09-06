@@ -1,5 +1,5 @@
 {
-    "name": "package-name",
+    "name": "cmskit/wizard-datepicker",
     "type": "library",
     "version": "1.0.0",
     "description": "A cms-kit wizard to create a jQuery-UI datepicker",
@@ -12,15 +12,16 @@
     ],
     "homepage": "http://cms-kit.com",
 
-    "require": {
+  "require": {
         "php": ">=5.3.3",
-        "cmskit/lib-jquery-ui": "dev-master"
+        "cmskit/package-installer": "1.0.*@dev",
+        "cmskit/jquery-ui": "dev-master"
     },
     "extra": {
         "wizards": {
             "VARCHAR": {
                 "description": "",
-                "embed": "wizard:datepick"
+                "embed": "wizard:datepicker"
             }
         }
     }
